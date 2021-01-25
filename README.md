@@ -1,5 +1,3 @@
-# curve utils
-
 ## Installation
 
 ```shell

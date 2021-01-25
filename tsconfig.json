@@ -30,6 +30,6 @@
       "@/*": ["./src/*"]
     }
   },
-  "include": ["./src/index.ts", "./src/demo.ts","./src/**/*.d.ts"],
+  "include": ["./src/index.ts", "./src/**/*.d.ts"],
   "exclude": ["node_modules", "dist", "**/*.js"]
 }

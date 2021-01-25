@@ -7,13 +7,33 @@
 </head>
 
 <body>
-    <img src="./img1.png" onload="load(this)" alt="">
-    <script src="../dist/js/gradient.js"></script>
+    <script src="../dist/js/gradient-alpha.js"></script>
     <script>
-       function load(img){
-           gradient.linear(img,315);
-       }
-    </script>
+    function load(){
+
+        let img = new Image();
+        img.onload = function () {
+    
+            let imageData=gradient.getImageData(img);
+            function a() {
+                for(let i = 0;i<360;i+=10){
+                     let canvas = document.createElement('canvas');
+                     document.body.appendChild(canvas);
+                     let cxt = canvas.getContext('2d');
+                     canvas.width = img.naturalWidth;
+                     canvas.height = img.naturalHeight;
+                     let newImage = gradient.linear(imageData, i, [[0,"0"],[0.3,"50%"],[1,"100%"]]);
+                     
+                     cxt.putImageData(newImage,0,0);
+                 }
+             }
+             a();
+           
+        }
+        img.src = 'img1.png';
+    };
+    load();
+</script>
 </body>
 
 </html>
