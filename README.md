@@ -8,7 +8,7 @@ npm install gradient-alpha --save
 <script src="js/gradient-alpha.js"></script>
 ```
 
-# curve
+# gradient
 
 ## Features
 
