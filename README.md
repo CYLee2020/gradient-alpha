@@ -3,11 +3,11 @@
 ## Installation
 
 ```shell
-npm install alpha-gradient --save
+npm install gradient-alpha --save
 ```
 
 ```html
-<script src="js/alpha-gradient.js"></script>
+<script src="js/gradient-alpha.js"></script>
 ```
 
 # curve
