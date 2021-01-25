@@ -1,15 +1,14 @@
 {
-  "name": "alpha-gradient",
+  "name": "gradient-alpha",
   "version": "0.0.1",
   "main": "./dist/index.js",
-  "browser": "./dist/js/curveUtils.js",
+  "browser": "./dist/js/gradient-alpha.js",
   "license": "MIT",
-  "dependencies": {},
   "files": [
     "package.json",
     "dist/index.js",
     "dist/index.d.ts",
-    "dist/js/curveUtils.js",
+    "dist/js/gradient-alpha.js",
     "README.md",
     "LICENSE"
   ],
