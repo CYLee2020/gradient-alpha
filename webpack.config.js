@@ -51,7 +51,7 @@ module.exports = function (env) {
     //production生产模式，项目上线的时候要使用的模式。
     mode: env.production ? "production" : "development",
     output: {
-      filename: "js/gradient.js",
+      filename: "js/alpha-gradient.js",
       path: path.resolve(__dirname, 'dist/'),
       libraryTarget: "umd2", // 通用模块定义
     },

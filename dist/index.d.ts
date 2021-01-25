@@ -1,9 +1,9 @@
 declare let _exports: {
-    linear(img: HTMLImageElement, angel?: number, stop?: number[]): void;
-    getImageData(img: HTMLImageElement): ImageData;
+    linear<T extends HTMLImageElement | ImageData>(img: T, angel?: number, stops?: number[] | Array<[number, number | string]>): T;
+    getImageData(img: HTMLImageElement | ImageData): ImageData;
 };
 export default _exports;
 export declare let gradient: {
-    linear(img: HTMLImageElement, angel?: number, stop?: number[]): void;
-    getImageData(img: HTMLImageElement): ImageData;
+    linear<T extends HTMLImageElement | ImageData>(img: T, angel?: number, stops?: number[] | Array<[number, number | string]>): T;
+    getImageData(img: HTMLImageElement | ImageData): ImageData;
 };
