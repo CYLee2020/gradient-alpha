@@ -23,10 +23,13 @@ generate ImageData or Canvas from Image or ImageData by alpha options;
 ```typescript
 gradient.linear(img: ImageData|HTMLImageElement, angel: number = 90, stops: number[] | Array<[number, number | string]> = [0, 1]):  ImageData|HTMLImageElement;
 ```
-#### `params`:
-img:ImageData|HTMLImageElement;
-angel:number;gradient direction,range[0,360];
-stops:[[number,number|string]...];alpha  sections;like [[0,"0"],[1:"100%"]];frist param is alpha,second param is length(range[0,1] or range["0","100%"]);
+#### `example`:
+
+`img` - ImageData|HTMLImageElement;
+
+`angel` - number;gradient direction,range[0,360];
+
+`stops` - [[number,number|string]...];alpha  sections;like [[0,"0"],[1:"100%"]];frist param is alpha,second param is length(range[0,1] or range["0","100%"]);
 
 ```typescript
 gradient.linear(new Image(),45,[[0,"0"],[0.3,"50%"],[1,"100%"]])
