@@ -10,12 +10,11 @@ function load() {
         canvas.height = img.naturalHeight;
         let cxt = canvas.getContext('2d');
         let i = 0;
+        let imageData=gradient.getImageData(img);
         function a() {
            if (i < 360) {
-                let newImage = gradient.linear(img, i, [[1, 0.4], [0, 0.5], [0.3, 1]]);
-                console.log( i)
-                cxt!.clearRect(0,0,canvas.width, canvas.height)
-                cxt!.drawImage(newImage, 0, 0, canvas.width, canvas.height);
+                let newImage = gradient.linear(imageData, i, [[1, 0.4], [0, 0.5], [0.3, 1]]);
+                cxt!.putImageData(newImage,0,0);
                 i++;
                 setTimeout(a, 33)
             }
