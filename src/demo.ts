@@ -6,8 +6,7 @@ function load() {
     let img = new Image();
     img.onload = function () {
 
-        let imageData=gradient.getImageData(img);
-       
+ 
         function a() {
            for(let i = 0;i<360;i+=10){
                 let canvas = document.createElement('canvas');
@@ -15,9 +14,9 @@ function load() {
                 let cxt = canvas.getContext('2d');
                 canvas.width = img.naturalWidth;
                 canvas.height = img.naturalHeight;
-                let newImage = gradient.linear(imageData, i, [[0,"0"],[0.3,"50%"],[1,"100%"]]);
+                let newImage = gradient.linear(img, i, [[0,"0"],[0.3,"50%"],[1,"100%"]]);
                 
-                cxt!.putImageData(newImage,0,0);
+                cxt!.drawImage(newImage,0,0,canvas.width,canvas.height);
             }
         }
         a();

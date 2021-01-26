@@ -21,8 +21,7 @@ generate ImageData or Canvas from Image or ImageData by alpha options;
 ### `linear`:
 
 ```typescript
-gradient.linear(img: ImageData|HTMLImageElement, angel: number = 90, stops: number[] | Array<[number, number | string]> = [0, 1]):  ImageData|HTMLImageElement;
-
+ gradient.linear< T extends HTMLImageElement|ImageData>(img:T, angel: number = 90, stops: number[] | Array<[number, number | string]> = [0, 1],alphas?:number[]):T
 ```
 `img` - `ImageData|HTMLImageElement`;
 

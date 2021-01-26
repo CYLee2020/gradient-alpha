@@ -1,6 +1,6 @@
 {
   "name": "gradient-alpha",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "main": "./dist/index.js",
   "browser": "./dist/js/gradient-alpha.js",
   "license": "MIT",
