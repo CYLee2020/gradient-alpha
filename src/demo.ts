@@ -20,6 +20,18 @@ function load() {
             }
         }
         a();
+
+        function b() {
+            let canvas = document.createElement('canvas');
+            document.body.appendChild(canvas);
+            let cxt = canvas.getContext('2d');
+            canvas.width = img.naturalWidth;
+            canvas.height = img.naturalHeight;
+            let newImage = gradient.radial(img,[[0,"0"],[0,"100%"],[1,"100%"]],["20%","50%"]);
+            
+            cxt!.drawImage(newImage,0,0,canvas.width,canvas.height);
+         }
+         b();
     }
     img.src = imgSrc;
 }
